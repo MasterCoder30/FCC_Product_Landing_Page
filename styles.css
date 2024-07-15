@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lato", sans-serif;
+    background-color: white;
+}
+html {
+    scroll-behavior: smooth;
+}
+#main-page {
+    background-color: whitesmoke;
+    padding-top: 1.5rem;
+    margin-bottom: 5rem;
+    height: 73vh;
+}
+#main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 10rem;
+    
+}
+header {
+    display: flex;
+    position: relative;
+}
+#header-img {
+    position: relative;
+    max-width: 300px;
+    width: 150px;
+    height: 80px;
+    margin-left: 1rem;
+}
+#nav-bar  {
+    margin: 1rem 0 0;
+    margin-left: 11rem;
+}
+#nav-bar ul li {
+    display: inline;   
+}
+li a {
+    position: relative;
+    align-items: center;
+    margin: 0 1rem;
+    justify-content: space-around;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+li a:hover {
+    color: blue;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+.top_button {
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.top_button:hover {
+    background-color: blue;
+    color: white;
+    transform: scale(1.3);
+}
+#demos {
+    position: relative;
+    display: flex;
+    margin-left: 11rem;
+    margin-top: 5rem;
+}
+#demos-img {
+    margin-left: 5rem;
+}
+#demos-img img {
+    max-width: 200%;
+    width: 110%;
+    height: 50%;
+}
+#demos-content h1 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+#demos-content p {
+    letter-spacing: 0.1px;
+    margin-bottom: 2rem;
+    color: rgb(75, 68, 68);
+}
+.btn-1 {
+    background-color: transparent;
+    border: 2px solid blue;
+    border-radius: 5px;
+    color: blue;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.btn-1:hover {
+    background-color: blue;
+    color: white;
+}
+.btn-2 {
+    background-color: blue;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.btn-2:hover {
+    background-color: transparent;
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+#pages {
+    position: relative;
+    display: flex;
+    margin-left: 8rem;
+    margin-bottom: 6rem;
+}
+#pages-content-1, #pages-content-2 {
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 25px 30px;
+}
+#pages-content-1 {
+    margin-right: 1.5rem;
+}
+#pages-content-1 i, #pages-content-2 i {
+    font-size: 3rem;
+    position: absolute;
+    display: flex;
+    margin-left: -15px;
+    color: blue;
+}
+.pages-header {
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+#pages-content-1, .pages-header, .pages-header-content, .pages-link {
+    margin-left: 3rem;
+}
+.pages-header-content {
+    margin-bottom: 1.5rem;
+    font-size: 15px;
+    color: rgb(75, 68, 68);
+}
+.pages-link {
+    text-decoration: none;
+}
+.pages-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 8.5px;
+}
+#portfolio {
+    position: relative;
+    display: flex;
+    background-color: whitesmoke;
+    margin-bottom: 5rem;
+}
+#portfolio-content-1 {
+    margin-left: 6.5rem;
+    margin-top: 5rem;
+}
+#portfolio-image {
+    width: 46rem;
+    height: 35rem;
+}
+.portfolio-header-1 {
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+.portfolio {
+    height: 2.5px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+    width: 40px;
+}
+.portfolio-header-content {
+    margin: 1rem 0 3rem;
+    color: rgb(75, 68, 68);
+}
+#portfolio-content-container {
+    margin-top: 18rem;
+    margin-left: -25rem;
+    display: flex;
+}
+#portfolio-content-2, #portfolio-content-3 {
+    position: relative;
+    display: grid;
+}
+.portfolio-header-2, .portfolio-header-3 {
+    font-size: 50px;
+    font-weight: 400;
+}
+span {
+    color: blue;
+}
+#portfolio-content-2 {
+    margin-right: 4rem;
+}
+.portfolio-content-2, .portfolio-content-3 {
+    margin-top: -6rem;
+    color: rgb(75, 68, 68);
+}
+#blog {
+    margin-bottom: 5rem;
+}
+#blog-content-container {
+    position: relative;
+    display: flex;
+}
+#blog-content {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+#blog-content-left {
+    margin-left: 15rem;
+}
+.blog-content-header {
+    font-size: 25px;
+    margin: 0 0 1rem;
+}
+.blog {
+    height: 2.5px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+    width: 30px;
+    margin: 0 auto 1rem;
+}
+.blog-content {
+    color: rgb(75, 68, 68);
+    margin: 0 0 4rem;
+}
+#blog-content-image {
+    width: 300px;
+    height: 300px;
+    margin-top: 1rem;
+    margin-left: 10rem;
+}
+#blog-content-left-1, #blog-content-right-1 {
+    margin-bottom: 2rem;
+}
+#blog-content-left i {
+    font-size: 30px;
+    color: blue;
+    margin-bottom: 1.5rem;
+    margin-left: 9rem;
+}
+.blog-header-left-1, .blog-header-left-2 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-left: 3.5rem;
+}
+.blog-content-left-1, .blog-content-left-2,
+.blog-content-right-1, .blog-content-right-2 {
+    color: rgb(75, 68, 68);
+    font-size: 15px;
+}
+#blog-content-right {
+    position: relative;
+    display: grid;
+    margin-left: 10rem;
+}
+#blog-content-right i {
+    font-size: 30px;
+    color: blue;
+    margin-bottom: 1.5rem;
+}
+.blog-header-right-1, .blog-header-right-2 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+#shop {
+    position: relative;
+    display: flex;
+    background-color: whitesmoke;
+    margin-bottom: 5rem;
+}
+#video {
+    width: 45rem;
+    height: 35rem;
+}
+#shop-content {
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+.shop-content-1 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+.shop {
+    height: 2.5px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+    width: 40px;
+    margin-bottom: 1rem;
+}
+.shop-content-2, .shop-content-3 {
+    color: rgb(75, 68, 68);
+    letter-spacing: normal;
+}
+.shop-content-3 {
+    margin-bottom: 3rem;
+}
+.shop-button, .blocks-btn {
+    border: 2px solid blue;
+    border-radius: 5px;
+    background: transparent;
+    padding: 10px 25px;
+    color: blue;
+    font-weight: 700;
+    cursor: pointer;
+}
+.shop-button:hover, .blocks-btn:hover {
+    border: 2px solid blue;
+    border-radius: 5x;
+    background-color: blue;
+    color: white;
+}
+#blocks {
+    position: relative;
+    display: flex;
+    margin-bottom: 5rem;
+    margin-left: 11rem;
+}
+#blocks-content-1 {
+    margin-right: 11rem;
+    margin-top: 5rem;
+}
+.blocks-header-1 {
+    font-size: 30px;
+    margin-bottom: 3rem;
+}
+.blocks-content-1 {
+    color: rgb(75, 68, 68);
+    margin-bottom: 2rem;
+}
+.blocks-btn {
+    margin-bottom: 3.5rem;
+}
+.blocks-content-header-1 {
+    font-size: 12px;
+    color: rgb(75, 68, 68);
+}
+#blocks-content-2 {
+    border: 0.2px solid rgb(223, 216, 216);
+    padding: 8rem 7rem 3rem;
+}
+#blocks-content-3 {
+    border-top: 0.2px solid rgb(223, 216, 216);
+    border-bottom: 0.2px solid rgb(223, 216, 216);
+    border-right: 0.2px solid rgb(223, 216, 216);
+    padding: 8rem 7rem 3rem;
+}
+.basic-lists, .lists-content {
+    list-style: none;
+    padding-bottom: 1rem;
+}
+#blk-icon {
+    font-size: 40px;
+    padding-left: 3.3rem;
+    padding-top: -25rem;
+    margin-top: -5rem;
+    padding-bottom: 0.5rem;
+}
+.blocks-header-2, .blocks-header-3 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 0.3rem;
+}
+.blocks-content-2, .blocks-content-3 {
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+.lists-content {
+    color: rgb(75, 68, 68);
+    margin: 0 -4rem;
+}
+#lists-icon {
+    color: blue;
+    float: right;
+}
+#btn-lists-1 {
+    border: 2px solid blue;
+    border-radius: 5px;
+    background: transparent;
+    padding: 10px 25px;
+    color: blue;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+#btn-lists-1:hover {
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+}
+#btn-lists-2 {
+    border: 2px solid blue;
+    border-radius: 5px;
+    background: blue;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+#btn-lists-2:hover {
+    background-color: transparent;
+    color: blue;
+    border: 2px solid blue;
+}
+#elements {
+    position: relative;
+    display: flex;
+    background-color: whitesmoke;
+}
+#elements-img-content {
+    width: 45rem;
+    height: 35rem;
+}
+#elements-img {
+    margin-right: 5rem;
+}
+#contact {
+    display:block;
+    margin-top: 5rem;
+}
+.elements {
+    height: 2.5px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+    width: 40px;
+    margin-bottom: 1rem;
+}
+.contact-header {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.contact {
+    color: rgb(75, 68, 68);
+    margin-bottom: 1.5rem;
+}
+input {
+    width: 60%;
+    border: 0.2px solid rgb(223, 216, 216);
+    padding: 15px;
+    margin-bottom: 1rem;
+}
+#submit {
+    border: 2px solid blue;
+    border-radius: 5px;
+    background: blue;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+#submit:hover {
+    background-color: transparent;
+    color: blue;
+    border: 2px solid blue;
+}
